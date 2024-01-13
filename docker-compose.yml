@@ -1,0 +1,49 @@
+services:
+  vmagent:
+    container_name: vmagent
+    image: victoriametrics/vmagent:v1.96.0
+    depends_on:
+      - "victoriametrics"
+    ports:
+      - 8429:8429
+    volumes:
+      - ./vmagentdata:/vmagentdata
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--promscrape.config=/etc/prometheus/prometheus.yml"
+      - "--remoteWrite.url=http://victoriametrics:8428/api/v1/write"
+    networks:
+      - vm_net
+    restart: always
+  victoriametrics:
+    container_name: victoriametrics
+    image: victoriametrics/victoria-metrics:v1.96.0
+    ports:
+      - 8428:8428
+    volumes:
+      - ./vmdata:/storage
+    command:
+      - "--storageDataPath=/storage"
+      - "--httpListenAddr=:8428"
+    networks:
+      - vm_net
+    restart: always
+  snmp_exporter:
+    container_name: snmp_exporter
+    image: prom/snmp-exporter:v0.25.0
+    ports:
+      - 9116:9116
+    volumes:
+      - ./snmp_exporter/snmp_test.yml:/etc/snmp_exporter/snmp.yml
+    command:
+      - "--config.file=/etc/snmp_exporter/snmp.yml"
+    networks:
+      - vm_net
+    restart: always
+volumes:
+  vmagentdata:
+#    external: true
+  vmdata:
+#    external: true
+networks:
+  vm_net:

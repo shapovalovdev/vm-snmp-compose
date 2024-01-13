@@ -1,0 +1,3872 @@
+# WARNING: This file was auto-generated using snmp_exporter generator, manual changes will be lost.
+auths:
+  public_v1:
+    community: public
+    security_level: noAuthNoPriv
+    auth_protocol: MD5
+    priv_protocol: DES
+    version: 1
+  public_v2:
+    community: public
+    security_level: noAuthNoPriv
+    auth_protocol: MD5
+    priv_protocol: DES
+    version: 2
+modules:
+  eltex_mib:
+    walk:
+    - 1.3.6.1.4.1.35265.1.9.10
+    - 1.3.6.1.4.1.35265.1.9.12
+    - 1.3.6.1.4.1.35265.1.9.14
+    - 1.3.6.1.4.1.35265.1.9.18
+    - 1.3.6.1.4.1.35265.1.9.20
+    - 1.3.6.1.4.1.35265.1.9.21
+    - 1.3.6.1.4.1.35265.1.9.30
+    - 1.3.6.1.4.1.35265.1.9.31
+    - 1.3.6.1.4.1.35265.1.9.34
+    - 1.3.6.1.4.1.35265.1.9.35
+    - 1.3.6.1.4.1.35265.1.9.37
+    - 1.3.6.1.4.1.35265.1.9.38
+    - 1.3.6.1.4.1.35265.1.9.44
+    - 1.3.6.1.4.1.35265.1.9.45
+    - 1.3.6.1.4.1.35265.1.9.90
+    - 1.3.6.1.4.1.35265.3.10
+    - 1.3.6.1.4.1.35265.3.11
+    - 1.3.6.1.4.1.35265.3.12
+    - 1.3.6.1.4.1.35265.3.13
+    - 1.3.6.1.4.1.35265.3.14
+    - 1.3.6.1.4.1.35265.3.15
+    - 1.3.6.1.4.1.35265.3.16
+    - 1.3.6.1.4.1.35265.3.17
+    - 1.3.6.1.4.1.35265.3.18
+    - 1.3.6.1.4.1.35265.3.19
+    - 1.3.6.1.4.1.35265.3.20
+    - 1.3.6.1.4.1.35265.3.21
+    - 1.3.6.1.4.1.35265.3.22
+    - 1.3.6.1.4.1.35265.3.23
+    - 1.3.6.1.4.1.35265.3.29
+    - 1.3.6.1.4.1.35265.3.30
+    - 1.3.6.1.4.1.35265.3.31
+    - 1.3.6.1.4.1.35265.3.5
+    - 1.3.6.1.4.1.35265.3.6
+    - 1.3.6.1.4.1.35265.3.7
+    metrics:
+    - name: fxsMonitoringVMode
+      oid: 1.3.6.1.4.1.35265.1.9.10.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.1'
+      enum_values:
+        1: high
+        2: normal
+        3: low
+    - name: fxsMonitoringVBat
+      oid: 1.3.6.1.4.1.35265.1.9.10.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.2'
+    - name: fxsMonitoringVRing1
+      oid: 1.3.6.1.4.1.35265.1.9.10.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.3'
+    - name: fxsMonitoringVRing2
+      oid: 1.3.6.1.4.1.35265.1.9.10.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.4'
+    - name: fxsMonitoringTemp1
+      oid: 1.3.6.1.4.1.35265.1.9.10.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.5'
+    - name: fxsMonitoringTemp2
+      oid: 1.3.6.1.4.1.35265.1.9.10.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.6'
+    - name: fxsMonitoringTemp3
+      oid: 1.3.6.1.4.1.35265.1.9.10.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.7'
+    - name: fxsMonitoringTemp4
+      oid: 1.3.6.1.4.1.35265.1.9.10.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.8'
+    - name: fxsMonitoringFanState
+      oid: 1.3.6.1.4.1.35265.1.9.10.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.9'
+      enum_values:
+        0: "off"
+        1: "on"
+    - name: fxsMonitoringFan1Rotate
+      oid: 1.3.6.1.4.1.35265.1.9.10.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.10'
+      enum_values:
+        0: "false"
+        1: "true"
+    - name: fxsMonitoringFan2Rotate
+      oid: 1.3.6.1.4.1.35265.1.9.10.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.11'
+      enum_values:
+        0: "false"
+        1: "true"
+    - name: fxsMonitoringSubCooling
+      oid: 1.3.6.1.4.1.35265.1.9.10.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.10.12'
+    - name: fxsMonitoringVinput
+      oid: 1.3.6.1.4.1.35265.1.9.10.13
+      type: gauge
+      help: added for TAU-32M - 1.3.6.1.4.1.35265.1.9.10.13
+    - name: fxsMonitoringDevicePower
+      oid: 1.3.6.1.4.1.35265.1.9.10.14
+      type: gauge
+      help: 'Power: AC, DC - 1.3.6.1.4.1.35265.1.9.10.14'
+      enum_values:
+        1: ac
+        2: dc
+    - name: fxsPortNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.1
+      type: gauge
+      help: fxs port number TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.1
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortPhoneNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.2
+      type: DisplayString
+      help: fxs port phone number TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.2
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortState
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.3
+      type: gauge
+      help: fxs port state TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.3
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: hangdown
+        1: hangup
+        2: dial
+        3: calling
+        4: ringback
+        5: ringing
+        6: talking
+        7: busy
+        8: hold
+        9: holdDial
+        10: dvo
+        11: test
+        12: blocked
+        13: preCalling
+        14: conference3way
+        15: void
+        16: fxoHangdown
+        17: fxoHangup
+        255: disabled
+    - name: fxsPortUserName
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.4
+      type: DisplayString
+      help: fxs port user name TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.4
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortTalkingNum
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.5
+      type: DisplayString
+      help: Current phone number of remote party TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.5
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortTalkingStartTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.6
+      type: DisplayString
+      help: start talking time TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.6
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortSipConnected
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.7
+      type: DisplayString
+      help: time of last sip connect TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.7
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortH323Connected
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.8
+      type: DisplayString
+      help: time since h323 connect TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.8
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortSipConnecteNext
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.9
+      type: DisplayString
+      help: time of next sip connect TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.9
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortSipConnecteState
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.10
+      type: gauge
+      help: sip connect state TAU-SIP - 1.3.6.1.4.1.35265.1.9.12.1.1.10
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: ok
+        2: failed
+    - name: fxsPortSipConnectHost
+      oid: 1.3.6.1.4.1.35265.1.9.12.1.1.11
+      type: DisplayString
+      help: sip connect host - 1.3.6.1.4.1.35265.1.9.12.1.1.11
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigPhone
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.1
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.1
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigUserName
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.2
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.2'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigAuthName
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.3
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.3'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigAuthPass
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.4
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.4'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCustom
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.5'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigPlaymoh
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.6'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigAON
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.7'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: aonRus
+        2: dtmf
+        3: fskBell202
+        4: fskV23
+    - name: fxsPortConfigAONHideDate
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.8'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigAONHideName
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.9'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigTaxophone
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.10'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: polarity
+        2: kHz16
+        3: kHz12
+    - name: fxsPortConfigMinFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.11
+      type: gauge
+      help: 70-2000(from v2.8),1000(to v2.7) - 1.3.6.1.4.1.35265.1.9.12.2.1.11
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigMaxFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.12
+      type: gauge
+      help: 70-2000(from v2.8),1000(to v2.7) - 1.3.6.1.4.1.35265.1.9.12.2.1.12
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigGainr
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.13'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigGaint
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.14
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.14'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCategory
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.15
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.15'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCallTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.16
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.16'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: transmitFlash
+        1: attendedCT
+        2: unattendedCT
+        3: noDetectFlash
+        4: localCT
+    - name: fxsPortConfigCallWaiting
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.17
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.17'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigHotLine
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.18
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.18'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigHotNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.19
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.19
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigHotTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.20
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.20'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDisabled
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.21
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.21'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCtBusy
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.22
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.22'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCtUnconditional
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.23
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.23'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCtNoanswer
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.24
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.24'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCtNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.25
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.25
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCtTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.26
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.26'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigClir
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.27
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.27'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigStopDial
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.28
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.28'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigAltNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.29
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.29
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigUseAltNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.30
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.30'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigPickUp
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.31
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.31'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigSipPort
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.32
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.32'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCfgPriOverCw
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.33
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.33'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.34
+      type: gauge
+      help: we will save all our fixes when Commit set to 1 - 1.3.6.1.4.1.35265.1.9.12.2.1.34
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: fxsPortConfigDvoCwEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.35
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.35'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoCtAttendedEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.36
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.36'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoCtUnattendedEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.37
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.37'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoUnconditionalEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.38
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.38'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoCfBusyEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.39
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.39'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoCfAnswerEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.40
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.40'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoCfServiceEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.41
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.41'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDvoDoDisturbEn
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.42
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.42'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCtOutofservice
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.43
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.43'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCfuNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.44
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.44
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCfbNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.45
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.45
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCfnrNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.46
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.46
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigCfoosNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.47
+      type: DisplayString
+      help: allowed symbols 0-9A-Za-z*#_+!~$- - 1.3.6.1.4.1.35265.1.9.12.2.1.47
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDnd
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.48
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.48'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigFxoFlashTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.49
+      type: gauge
+      help: 70 1000 def 300 ms - 1.3.6.1.4.1.35265.1.9.12.2.1.49
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigFxoDelTdm
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.50
+      type: gauge
+      help: 100 1000 def 200 ms - 1.3.6.1.4.1.35265.1.9.12.2.1.50
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigFxoRingtdm
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.51
+      type: gauge
+      help: 2 10 def 2 - 1.3.6.1.4.1.35265.1.9.12.2.1.51
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigPstnNumberprefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.52
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.12.2.1.52
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigPstnNameprefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.53
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.12.2.1.53
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigUsePstnCid
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.54
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.54'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigtdmhotline
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.55
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.55'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigtdmhottimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.56
+      type: gauge
+      help: 0 300 def 15 - 1.3.6.1.4.1.35265.1.9.12.2.1.56
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigtdmhotnumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.57
+      type: DisplayString
+      help: max len 30 - 1.3.6.1.4.1.35265.1.9.12.2.1.57
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigEnableCpc
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.58
+      type: gauge
+      help: def false - 1.3.6.1.4.1.35265.1.9.12.2.1.58
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCpcTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.59
+      type: gauge
+      help: 200-600 ms def 200 - 1.3.6.1.4.1.35265.1.9.12.2.1.59
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDontDetectDT
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.60
+      type: gauge
+      help: def false - 1.3.6.1.4.1.35265.1.9.12.2.1.60
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDelayDialingTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.61
+      type: gauge
+      help: 0-10 ms def 2 - 1.3.6.1.4.1.35265.1.9.12.2.1.61
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortType
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.62
+      type: DisplayString
+      help: FXS, FXO, NONE - 1.3.6.1.4.1.35265.1.9.12.2.1.62
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDialing
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.63
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.63'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: dtmf
+        2: pulse
+    - name: fxsPortConfigTransmitNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.64
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.64'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigDontTransmitPrefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.65
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.65'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigPortProfileID
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.66
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.66'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigSipProfileID
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.67
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.67'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDialToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.68
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.12.2.1.68
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigRingBackToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.69
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.12.2.1.69
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigBusyToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.70
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.12.2.1.70
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDtDetectTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.71
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.71'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDecadePulseTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.72
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.72'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDecadePauseTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.73
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.2.1.73'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigNoOffhookAtRinging
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.74
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.74
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigFxoCallBusy
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.75
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.75
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCpcRus
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.76
+      type: gauge
+      help: 1..10 or 0 (off) - 1.3.6.1.4.1.35265.1.9.12.2.1.76
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigReversalPolarityAction
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.77
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.77
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: ignore
+        1: release
+        2: answer
+    - name: fxsPortConfigPstnActivity
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.78
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.78
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: releaseAtPstnReversalPolarityDetection
+        2: answerAtPstnReversalPolarityDetection
+        3: pstnAnswerDetection
+    - name: fxsPortConfigPstnRbDetectTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.79
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.79
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigDetectFxoLinePresence
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.80
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.80
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigBlockFxoLineInOutgoingDirection
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.81
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.12.2.1.81
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigFxoMinLevelDetect
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.82
+      type: gauge
+      help: 'Minimum level of detectable signal (dBm): -40..-20 (def -36) TAU-SIP
+        2.10 - 1.3.6.1.4.1.35265.1.9.12.2.1.82'
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigUseAltNumberAsContact
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.83
+      type: gauge
+      help: Use alternative number as contact (only for serial groups members) TAU-SIP
+        2.12 - 1.3.6.1.4.1.35265.1.9.12.2.1.83
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigModifier
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.84
+      type: gauge
+      help: modifierNumber (1..16) at modifiersTable or -1=off TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.12.2.1.84
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+    - name: fxsPortConfigMwiDialtone
+      oid: 1.3.6.1.4.1.35265.1.9.12.2.1.85
+      type: gauge
+      help: MWI Dialtone TAU-SIP 2.13 - 1.3.6.1.4.1.35265.1.9.12.2.1.85
+      indexes:
+      - labelname: fxsPortNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonPlaymoh
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.1'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonAON
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.2'
+      enum_values:
+        0: "off"
+        1: aonRus
+        2: dtmf
+        3: fskBell202
+        4: fskV23
+    - name: fxsPortConfigCommonAONHideDate
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.3'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonAONHideName
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.4'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonTaxophone
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.5'
+      enum_values:
+        0: "off"
+        1: polarity
+        2: kHz16
+        3: kHz12
+    - name: fxsPortConfigCommonMinFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.6'
+    - name: fxsPortConfigCommonMaxFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.7'
+    - name: fxsPortConfigCommonGainr
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.8'
+    - name: fxsPortConfigCommonGaint
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.9'
+    - name: fxsPortConfigCommonCategory
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.10'
+    - name: fxsPortConfigCommonCallTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.11'
+      enum_values:
+        0: transmitFlash
+        1: attendedCT
+        2: unattendedCT
+        3: noDetectFlash
+        4: localCT
+    - name: fxsPortConfigCommonCallWaiting
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.12'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonCfgPriOverCw
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.13'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonFxoFlashTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.14
+      type: gauge
+      help: 70 1000 def 300 ms - 1.3.6.1.4.1.35265.1.9.12.3.14
+    - name: fxsPortConfigCommonFxoDelTdm
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.15
+      type: gauge
+      help: 100 1000 def 200 ms - 1.3.6.1.4.1.35265.1.9.12.3.15
+    - name: fxsPortConfigCommonFxoRingtdm
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.16
+      type: gauge
+      help: 2 10 def 2 - 1.3.6.1.4.1.35265.1.9.12.3.16
+    - name: fxsPortConfigCommonPstnNumberprefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.17
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.12.3.17
+    - name: fxsPortConfigCommonPstnNameprefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.18
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.12.3.18
+    - name: fxsPortConfigCommonUsePstnCid
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.19
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.19'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonEnableCpc
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.20
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.20'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonCpcTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.21
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.21'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonDontDetectDT
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.22
+      type: gauge
+      help: def false - 1.3.6.1.4.1.35265.1.9.12.3.22
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonDelayDialingTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.23
+      type: gauge
+      help: 0-10 ms def 2 - 1.3.6.1.4.1.35265.1.9.12.3.23
+    - name: fxsPortConfigCommonDialing
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.24
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.24'
+      enum_values:
+        1: dtmf
+        2: pulse
+    - name: fxsPortConfigCommonTransmitNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.25
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.25'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsPortConfigCommonDontTransmitPrefix
+      oid: 1.3.6.1.4.1.35265.1.9.12.3.26
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.12.3.26'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: megacoPortNumber
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.1
+      type: gauge
+      help: megaco port number - 1.3.6.1.4.1.35265.1.9.12.4.1.1
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: megacoPortTerminationID
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.2
+      type: DisplayString
+      help: megaco port Termination ID (from cfg) - 1.3.6.1.4.1.35265.1.9.12.4.1.2
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: megacoPortComments
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.3
+      type: DisplayString
+      help: megaco port Comments (from cfg) - 1.3.6.1.4.1.35265.1.9.12.4.1.3
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: megacoPortState
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.4
+      type: gauge
+      help: megaco port state - 1.3.6.1.4.1.35265.1.9.12.4.1.4
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+      enum_values:
+        0: hangdown
+        1: hangup
+        2: dial
+        3: calling
+        4: ringback
+        5: ringing
+        6: talking
+        7: busy
+        8: hold
+        9: holdDial
+        10: holdDvo
+        11: transfer
+        12: unattended
+        13: blocked
+        14: ready
+        15: notInited
+        16: disabled
+        17: absent
+        255: noActualData
+    - name: megacoPortStateStartTime
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.5
+      type: DisplayString
+      help: current state start time - 1.3.6.1.4.1.35265.1.9.12.4.1.5
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: megacoPortStateDuration
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.6
+      type: DisplayString
+      help: or current state duration [DD hh:mm:ss] - 1.3.6.1.4.1.35265.1.9.12.4.1.6
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: megacoPortJitter
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.7
+      type: gauge
+      help: port jitter - 1.3.6.1.4.1.35265.1.9.12.4.1.7
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+      enum_values:
+        0: ok
+        1: leakageCurrent
+        2: overheating
+        3: dissipatedPower
+    - name: megacoPortTelNo
+      oid: 1.3.6.1.4.1.35265.1.9.12.4.1.8
+      type: DisplayString
+      help: megaco port TelNo (from cfg) - 1.3.6.1.4.1.35265.1.9.12.4.1.8
+      indexes:
+      - labelname: megacoPortNumber
+        type: gauge
+    - name: fxsDialPlanHost
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.1
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.1'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanDigits
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.2
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.2'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.3'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanMinDigits
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.4'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanType
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.5'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: h323GateKeeper
+        2: sipProxy
+        3: h323DirectIP
+        4: sipDirectIP
+        5: siptDirectIP
+        6: pickupGroup
+    - name: fxsDialPlanAccessMask
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.6
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.6'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanDialtone
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.7'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsDialPlanModifier
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.8
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.8'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanNature
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.9'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        0: unknown
+        1: subscriber
+        2: national
+        3: international
+    - name: fxsDialPlanDelnum
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.10'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanPtime
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.11'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.12'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: fxsDialPlanNumber
+      oid: 1.3.6.1.4.1.35265.1.9.14.1.1.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.1.1.13'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsDialPlanNext
+      oid: 1.3.6.1.4.1.35265.1.9.14.2
+      type: gauge
+      help: Show next (empty) position in DialPlanTable - 1.3.6.1.4.1.35265.1.9.14.2
+    - name: tauDialRegularOn
+      oid: 1.3.6.1.4.1.35265.1.9.14.3.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.3.1'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: tauDialRegularProtocol
+      oid: 1.3.6.1.4.1.35265.1.9.14.3.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.3.2'
+      enum_values:
+        1: sip
+        2: h323
+    - name: tauDialRegularText
+      oid: 1.3.6.1.4.1.35265.1.9.14.3.3
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.14.3.3'
+    - name: fxsSerialGroupsPhone
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.1
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.1'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsEnabled
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.2'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsSerialGroupsSerialType
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.3'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        0: group
+        1: serial
+        2: cyclic
+    - name: fxsSerialGroupsBusyType
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.4'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        0: clearOnBusy
+        1: waitFirstFree
+    - name: fxsSerialGroupsTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.5'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsSipPort
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.6'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsAuthName
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.7
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.7'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsAuthPass
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.8
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.8'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsPorts
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.9
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.9'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsSipProfile
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.10'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxsSerialGroupsRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.18.1.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.1.1.11'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: fxsSerialGroupsNextEmpty
+      oid: 1.3.6.1.4.1.35265.1.9.18.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.18.2'
+    - name: tauVoipDvoCallwaiting
+      oid: 1.3.6.1.4.1.35265.1.9.20.1
+      type: DisplayString
+      help: 00..99 - 1.3.6.1.4.1.35265.1.9.20.1
+    - name: tauVoipDvoCtAttended
+      oid: 1.3.6.1.4.1.35265.1.9.20.2
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.2'
+    - name: tauVoipDvoCtUnattended
+      oid: 1.3.6.1.4.1.35265.1.9.20.3
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.3'
+    - name: tauVoipDvoCfUnconditional
+      oid: 1.3.6.1.4.1.35265.1.9.20.4
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.4'
+    - name: tauVoipDvoCfBusy
+      oid: 1.3.6.1.4.1.35265.1.9.20.5
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.5'
+    - name: tauVoipDvoCfNoanswer
+      oid: 1.3.6.1.4.1.35265.1.9.20.6
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.6'
+    - name: tauVoipDvoCfService
+      oid: 1.3.6.1.4.1.35265.1.9.20.7
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.7'
+    - name: tauVoipDvoDoDisturb
+      oid: 1.3.6.1.4.1.35265.1.9.20.8
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.20.8'
+    - name: sipEnablesip
+      oid: 1.3.6.1.4.1.35265.1.9.21.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.1'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipObtimeout
+      oid: 1.3.6.1.4.1.35265.1.9.21.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.2'
+    - name: sipMode
+      oid: 1.3.6.1.4.1.35265.1.9.21.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.3'
+      enum_values:
+        0: "off"
+        1: parking
+        2: homing
+    - name: sipOptions
+      oid: 1.3.6.1.4.1.35265.1.9.21.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.4'
+      enum_values:
+        0: invite
+        1: options
+        2: register
+    - name: sipKeepalivet
+      oid: 1.3.6.1.4.1.35265.1.9.21.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.5'
+    - name: sipDomainToReg
+      oid: 1.3.6.1.4.1.35265.1.9.21.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.6'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipDomain
+      oid: 1.3.6.1.4.1.35265.1.9.21.7
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.7'
+    - name: sipRegisterRetryInterval
+      oid: 1.3.6.1.4.1.35265.1.9.21.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.8'
+    - name: sipOutbound
+      oid: 1.3.6.1.4.1.35265.1.9.21.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.9'
+      enum_values:
+        0: "off"
+        1: "on"
+        2: withBusyTone
+    - name: sipInboundProxy
+      oid: 1.3.6.1.4.1.35265.1.9.21.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.10'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipExpires
+      oid: 1.3.6.1.4.1.35265.1.9.21.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.11'
+    - name: sipAuthentication
+      oid: 1.3.6.1.4.1.35265.1.9.21.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.12'
+      enum_values:
+        0: "off"
+        1: global
+        2: userDefined
+    - name: sipUsername
+      oid: 1.3.6.1.4.1.35265.1.9.21.13
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.13'
+    - name: sipPassword
+      oid: 1.3.6.1.4.1.35265.1.9.21.14
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.14'
+    - name: sipProxy0
+      oid: 1.3.6.1.4.1.35265.1.9.21.15
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.15'
+    - name: sipRegrar0
+      oid: 1.3.6.1.4.1.35265.1.9.21.16
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.16'
+    - name: sipRegistration0
+      oid: 1.3.6.1.4.1.35265.1.9.21.17
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.17'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProxy1
+      oid: 1.3.6.1.4.1.35265.1.9.21.18
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.18'
+    - name: sipRegrar1
+      oid: 1.3.6.1.4.1.35265.1.9.21.19
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.19'
+    - name: sipProxy2
+      oid: 1.3.6.1.4.1.35265.1.9.21.20
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.20'
+    - name: sipRegrar2
+      oid: 1.3.6.1.4.1.35265.1.9.21.21
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.21'
+    - name: sipProxy3
+      oid: 1.3.6.1.4.1.35265.1.9.21.22
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.22'
+    - name: sipRegrar3
+      oid: 1.3.6.1.4.1.35265.1.9.21.23
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.23'
+    - name: sipProxy4
+      oid: 1.3.6.1.4.1.35265.1.9.21.24
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.24'
+    - name: sipRegrar4
+      oid: 1.3.6.1.4.1.35265.1.9.21.25
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.25'
+    - name: sipDtmfmime
+      oid: 1.3.6.1.4.1.35265.1.9.21.26
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.26'
+      enum_values:
+        0: applicationDtmfRelay
+        1: applicationDtmf
+        2: audioTelephoneEvent
+    - name: sipHfmime
+      oid: 1.3.6.1.4.1.35265.1.9.21.27
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.27'
+      enum_values:
+        0: asDTMF
+        1: applicationHookFlash
+        2: applicationBroadsoft
+        3: applicationSscc
+    - name: sipCtWithReplaces
+      oid: 1.3.6.1.4.1.35265.1.9.21.28
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.28'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipShortmode
+      oid: 1.3.6.1.4.1.35265.1.9.21.29
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.29'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipTransport
+      oid: 1.3.6.1.4.1.35265.1.9.21.30
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.30'
+      enum_values:
+        0: udpPrefferedOrTcp
+        1: tcpPrefferedOrUdp
+        2: udpOnly
+        3: tcpOnly
+    - name: sipSipMtu
+      oid: 1.3.6.1.4.1.35265.1.9.21.31
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.31'
+    - name: sip100Rel
+      oid: 1.3.6.1.4.1.35265.1.9.21.32
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.32'
+      enum_values:
+        0: supported
+        1: required
+        2: "off"
+    - name: sipUserPhone
+      oid: 1.3.6.1.4.1.35265.1.9.21.33
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.33'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipUriEscapeHash
+      oid: 1.3.6.1.4.1.35265.1.9.21.34
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.34'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipInviteTotalT
+      oid: 1.3.6.1.4.1.35265.1.9.21.35
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.35'
+    - name: sipInviteInitT
+      oid: 1.3.6.1.4.1.35265.1.9.21.36
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.36'
+    - name: sipCwRingback
+      oid: 1.3.6.1.4.1.35265.1.9.21.37
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.37'
+      enum_values:
+        0: ring180Ringing
+        1: ring182Queued
+    - name: sipRingbackSdp
+      oid: 1.3.6.1.4.1.35265.1.9.21.38
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.38'
+      enum_values:
+        0: dontSendRingbackInRTP
+        1: ringbackWith180Ringing
+        2: ringbackWith183Progress
+    - name: sipRingback
+      oid: 1.3.6.1.4.1.35265.1.9.21.39
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.39'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipRegistration1
+      oid: 1.3.6.1.4.1.35265.1.9.21.40
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.40'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipRegistration2
+      oid: 1.3.6.1.4.1.35265.1.9.21.41
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.41'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipRegistration3
+      oid: 1.3.6.1.4.1.35265.1.9.21.42
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.42'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipRegistration4
+      oid: 1.3.6.1.4.1.35265.1.9.21.43
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.43'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipPRTPstat
+      oid: 1.3.6.1.4.1.35265.1.9.21.44
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.21.44'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipCommonEnablesip
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.1'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipCommonShortmode
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.2'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipCommonTransport
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.3'
+      enum_values:
+        0: udpPrefferedOrTcp
+        1: tcpPrefferedOrUdp
+        2: udpOnly
+        3: tcpOnly
+    - name: sipCommonSipMtu
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.4'
+    - name: sipCommonInviteTotalT
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.5'
+    - name: sipCommonInviteInitT
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.6'
+    - name: sipCommonPortRegistrationDelay
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.7
+      type: gauge
+      help: Port registration delay (ms) - 1.3.6.1.4.1.35265.1.9.30.1.1.7
+    - name: stunEnable
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.8'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: stunServer
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.9
+      type: DisplayString
+      help: max 49 symbols - 1.3.6.1.4.1.35265.1.9.30.1.1.9
+    - name: stunInterval
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.1.10'
+    - name: sipPublicIp
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.1.11
+      type: DisplayString
+      help: IPv4 address - 1.3.6.1.4.1.35265.1.9.30.1.1.11
+    - name: profilesSipMIBBoundary
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.2
+      type: gauge
+      help: Dummy object to prevent GETNEXT request from poking into neighbor table.
+        - 1.3.6.1.4.1.35265.1.9.30.1.2
+    - name: profileNumber
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.1'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileObtimeout
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.2'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileMode
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.3'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: parking
+        2: homing
+    - name: sipProfileOptions
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.4'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: invite
+        1: options
+        2: register
+    - name: sipProfileKeepalivet
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.5'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileDomainToReg
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.6'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileDomain
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.7
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.7
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegisterRetryInterval
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.8'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileOutbound
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.9'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: "on"
+        2: withBusyTone
+    - name: sipProfileInboundProxy
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.10'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileExpires
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.11'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileAuthentication
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.12'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: global
+        2: userDefined
+    - name: sipProfileUsername
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.13
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.13'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfilePassword
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.14
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.14'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileProxy0
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.15
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.15
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegrar0
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.16
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.16
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegistration0
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.17
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.17'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileProxy1
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.18
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.18
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegrar1
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.19
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.19
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileProxy2
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.20
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.20
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegrar2
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.21
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.21
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileProxy3
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.22
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.22
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegrar3
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.23
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.23
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileProxy4
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.24
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.24
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRegrar4
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.25
+      type: DisplayString
+      help: 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.30.1.3.1.25
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileDtmfmime
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.26
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.26'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: applicationDtmfRelay
+        1: applicationDtmf
+        2: audioTelephoneEvent
+    - name: sipProfileHfmime
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.27
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.27'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: asDTMF
+        1: applicationHookFlash
+        2: applicationBroadsoft
+        3: applicationSscc
+    - name: sipProfileCtWithReplaces
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.28
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.28'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfile100Rel
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.32
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.32'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: supported
+        1: required
+        2: "off"
+    - name: sipProfileUserPhone
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.33
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.33'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileUriEscapeHash
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.34
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.34'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileCwRingback
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.37
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.37'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: ring180Ringing
+        1: ring182Queued
+    - name: sipProfileRingbackSdp
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.38
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.38'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: dontSendRingbackInRTP
+        1: ringbackWith180Ringing
+        2: ringbackWith183Progress
+    - name: sipProfileRingback
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.39
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.39'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileRegistration1
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.40
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.40'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileRegistration2
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.41
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.41'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileRegistration3
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.42
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.42'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileRegistration4
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.43
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.43'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfilePRTPstat
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.44
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.44'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.45
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.3.1.45'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: sipProfileEnableTimer
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.46
+      type: gauge
+      help: Enable timer - 1.3.6.1.4.1.35265.1.9.30.1.3.1.46
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileMinSE
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.47
+      type: gauge
+      help: Min SE 90..1800 def 120 - 1.3.6.1.4.1.35265.1.9.30.1.3.1.47
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileSessionExpires
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.48
+      type: gauge
+      help: SessionExpires 90..80000 or 0 def 0 - 1.3.6.1.4.1.35265.1.9.30.1.3.1.48
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileRemoveInactiveMedia
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.49
+      type: gauge
+      help: Remove inactive media - 1.3.6.1.4.1.35265.1.9.30.1.3.1.49
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileKeepAliveInterval
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.50
+      type: gauge
+      help: keep alive interval 30..120 def 30 - 1.3.6.1.4.1.35265.1.9.30.1.3.1.50
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileKeepAliveMode
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.51
+      type: gauge
+      help: type of the keep alive message - 1.3.6.1.4.1.35265.1.9.30.1.3.1.51
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: options
+        2: notify
+        3: clrf
+    - name: sipProfileConferenceMode
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.52
+      type: gauge
+      help: Conference mode - 1.3.6.1.4.1.35265.1.9.30.1.3.1.52
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: local
+        1: remote
+    - name: sipProfileConferenceServer
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.53
+      type: DisplayString
+      help: Conference server name - 1.3.6.1.4.1.35265.1.9.30.1.3.1.53
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileEnableIMS
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.54
+      type: gauge
+      help: Enable IMS - 1.3.6.1.4.1.35265.1.9.30.1.3.1.54
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: implicit
+        2: explicit
+    - name: sipProfileXCAPNameForThreePartyConference
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.55
+      type: DisplayString
+      help: XCAP name for three-party conference - 1.3.6.1.4.1.35265.1.9.30.1.3.1.55
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileXCAPNameForHotline
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.56
+      type: DisplayString
+      help: XCAP name for hotline - 1.3.6.1.4.1.35265.1.9.30.1.3.1.56
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileXCAPNameForCallWaiting
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.57
+      type: DisplayString
+      help: XCAP name for call waiting - 1.3.6.1.4.1.35265.1.9.30.1.3.1.57
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileXCAPNameForCallHold
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.58
+      type: DisplayString
+      help: XCAP name for call hold - 1.3.6.1.4.1.35265.1.9.30.1.3.1.58
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileXCAPNameForExplicitCallTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.59
+      type: DisplayString
+      help: XCAP name for explicit call transfer - 1.3.6.1.4.1.35265.1.9.30.1.3.1.59
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: sipProfileUseAlertInfo
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.60
+      type: gauge
+      help: Alert-Info - 1.3.6.1.4.1.35265.1.9.30.1.3.1.60
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileFullRuriCompliance
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.61
+      type: gauge
+      help: Full RURI compliance - 1.3.6.1.4.1.35265.1.9.30.1.3.1.61
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipProfileChangeover
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.3.1.62
+      type: gauge
+      help: Changeover mode - 1.3.6.1.4.1.35265.1.9.30.1.3.1.62
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: changeoverOnFailureOfInviteOrRegisterRequest
+        1: changeoverOnFailureOfRegisterRequest
+    - name: profilesSipAlertInfoMIBBoundary
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.4
+      type: gauge
+      help: Dummy object to prevent GETNEXT request from poking into neighbor table.
+        - 1.3.6.1.4.1.35265.1.9.30.1.4
+    - name: cadenceNumber
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.5.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.5.1.1'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: cadenceNumber
+        type: gauge
+    - name: cadenceName
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.5.1.2
+      type: DisplayString
+      help: Alert-Info string (max len 30) - 1.3.6.1.4.1.35265.1.9.30.1.5.1.2
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: cadenceNumber
+        type: gauge
+    - name: cadenceRingRule
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.5.1.3
+      type: DisplayString
+      help: Distinctive Ring rule (max len 71) string of values (200-16000) devided
+        by ',' or ';' allowed 2,4,6,8,10,12 elements - 1.3.6.1.4.1.35265.1.9.30.1.5.1.3
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: cadenceNumber
+        type: gauge
+    - name: cadenceRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.1.5.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.1.5.1.4'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: cadenceNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: profilesPortsMIBBoundary
+      oid: 1.3.6.1.4.1.35265.1.9.30.2
+      type: gauge
+      help: Dummy object to prevent GETNEXT request from poking into neighbor table.
+        - 1.3.6.1.4.1.35265.1.9.30.2
+    - name: profilePortsPlaymoh
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.1'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsAON
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.2'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: aonRus
+        2: dtmf
+        3: fskBell202
+        4: fskV23
+    - name: profilePortsAONHideDate
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.3'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsAONHideName
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.4'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsTaxophone
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.5'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: polarity
+        2: kHz16
+        3: kHz12
+    - name: profilePortsMinFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.6
+      type: gauge
+      help: 70-2000(from v2.8),1000(to v2.7) - 1.3.6.1.4.1.35265.1.9.30.3.1.1.6
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsMaxFlashtime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.7
+      type: gauge
+      help: 70-2000(from v2.8),1000(to v2.7) - 1.3.6.1.4.1.35265.1.9.30.3.1.1.7
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsGainr
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.8'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsGaint
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.9'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsCategory
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.10'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsCallTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.11'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: transmitFlash
+        1: attendedCT
+        2: unattendedCT
+        3: noDetectFlash
+        4: localCT
+    - name: profilePortsCallWaiting
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.12'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsCfgPriOverCw
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.13'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsFxoFlashTime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.14
+      type: gauge
+      help: 70 1000 def 300 ms - 1.3.6.1.4.1.35265.1.9.30.3.1.1.14
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsFxoDelTdm
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.15
+      type: gauge
+      help: 100 1000 def 200 ms - 1.3.6.1.4.1.35265.1.9.30.3.1.1.15
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsFxoRingtdm
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.16
+      type: gauge
+      help: 2 10 def 2 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.16
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsPstnNumberprefix
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.17
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.17
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsPstnNameprefix
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.18
+      type: DisplayString
+      help: max len 20 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.18
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsUsePstnCid
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.19
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.19'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsEnableCpc
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.20
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.20'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsCpcTime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.21
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.21'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsDontDetectDT
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.22
+      type: gauge
+      help: def false - 1.3.6.1.4.1.35265.1.9.30.3.1.1.22
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsDelayDialingTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.23
+      type: gauge
+      help: 0-10 ms def 2 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.23
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsDialing
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.24
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.24'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: dtmf
+        2: pulse
+    - name: profilePortsTransmitNumber
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.25
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.25'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsDontTransmitPrefix
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.26
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.26'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.27
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.27'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: profilePortsDialToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.28
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.30.3.1.1.28
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsRingBackToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.29
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.30.3.1.1.29
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsBusyToneDetectionParameters
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.30
+      type: OctetString
+      help: FXO only - 1.3.6.1.4.1.35265.1.9.30.3.1.1.30
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsDtDetectTime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.31
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.31'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsDecadePulseTime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.32
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.32'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsDecadePauseTime
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.33
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.33'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsFxoCallBusy
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.34
+      type: gauge
+      help: Only for FXO - 1.3.6.1.4.1.35265.1.9.30.3.1.1.34
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsCpcRus
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.35
+      type: gauge
+      help: 1..10 or 0 (off) - 1.3.6.1.4.1.35265.1.9.30.3.1.1.35
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsReversalPolarityAction
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.36
+      type: gauge
+      help: FXO port only - 1.3.6.1.4.1.35265.1.9.30.3.1.1.36
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: ignore
+        1: release
+        2: answer
+    - name: profilePortsPstnActivity
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.37
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.30.3.1.1.37
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: "off"
+        1: releaseAtPstnReversalPolarityDetection
+        2: answerAtPstnReversalPolarityDetection
+        3: pstnAnswerDetection
+    - name: profilePortsPstnRbDetectTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.38
+      type: gauge
+      help: only for FXO - 1.3.6.1.4.1.35265.1.9.30.3.1.1.38
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsDetectFxoLinePresence
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.39
+      type: gauge
+      help: TAU-SIP 2.10 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.39
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsBlockFxoLineInOutgoingDirection
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.40
+      type: gauge
+      help: TAU-SIP 2.10 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.40
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsStopDial
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.41
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.3.1.1.41'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profilePortsFxoMinLevelDetect
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.42
+      type: gauge
+      help: 'Minimum level of detectable signal (dBm): -40..-20 (def -36) TAU-SIP
+        2.10 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.42'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilePortsModifier
+      oid: 1.3.6.1.4.1.35265.1.9.30.3.1.1.43
+      type: gauge
+      help: modifierNumber (1..16) at modifiersTable or -1=off TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.30.3.1.1.43
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profilesDialPlansMIBBoundary
+      oid: 1.3.6.1.4.1.35265.1.9.30.4
+      type: gauge
+      help: Dummy object to prevent GETNEXT request from poking into neighbor table.
+        - 1.3.6.1.4.1.35265.1.9.30.4
+    - name: profileDialPlanHost
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.1
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.1'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanDigits
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.2
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.2'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanTimeout
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.3'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanMinDigits
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.4'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanType
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.5'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+      enum_values:
+        1: h323GateKeeper
+        2: sipProxy
+        3: h323DirectIP
+        4: sipDirectIP
+        5: siptDirectIP
+        6: pickupGroup
+    - name: profileDialPlanAccessMask
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.6
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.6'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanDialtone
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.7'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profileDialPlanModifier
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.8
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.8'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanNature
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.9'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+      enum_values:
+        0: unknown
+        1: subscriber
+        2: national
+        3: international
+    - name: profileDialPlanDelnum
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.10'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialPlanPtime
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.11'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profileDialRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.12'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: profileDialPlanNumber
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.1.1.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.1.1.13'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      - labelname: profileDialPlanNumber
+        type: gauge
+    - name: profilesRegExpDPTableMIBBoundary
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.2
+      type: gauge
+      help: Dummy object to prevent GETNEXT request from poking into neighbor table.
+        - 1.3.6.1.4.1.35265.1.9.30.5.2
+    - name: profileRegExpDialOn
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.3.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.3.1.1'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: profileRegExpDialProtocol
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.3.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.3.1.2'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: sip
+        2: h323
+    - name: profileRegExpDialText
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.3.1.3
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.3.1.3'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: profileRegExpDialRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.5.3.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.5.3.1.4'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: useG711A
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.1
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.1
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: useG711U
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.2
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.2
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: useG726to32
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.3
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.3
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: useG723
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.4
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.4
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: useG729B
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.6
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.6
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: useG729A
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.7
+      type: gauge
+      help: order by 1 to N or 0(not use) - 1.3.6.1.4.1.35265.1.9.30.7.1.1.7
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: g711Ptime
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.8
+      type: gauge
+      help: 10,20,30..60 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.8
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: g729Ptime
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.9
+      type: gauge
+      help: 10,20,30..80 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.9
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: g723Ptime
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.10
+      type: gauge
+      help: 30,60,90 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.10
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: g726to32Ptime
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.11
+      type: gauge
+      help: 10,20,30 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.11
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: g726to32PT
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.12
+      type: gauge
+      help: 96..127 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.12
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: dtmfTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.13
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.13'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: inband
+        1: rfc2833
+        2: info
+    - name: flashTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.14
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.14'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: disabled
+        1: rfc2833
+        2: info
+    - name: faxDetectDirection
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.15
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.15'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: both
+        1: caller
+        2: callee
+        3: none
+    - name: faxTransferCodec
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.16
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.16'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: g711a
+        1: g711u
+        2: t38
+    - name: slaveFaxTransferCodec
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.17
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.17'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: g711a
+        1: g711u
+        2: t38
+        3: none
+    - name: modemTransfer
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.18
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.18'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: g711aVbd
+        1: g711uVbd
+        2: g711aRfc3108
+        3: g711uRfc3108
+        4: "off"
+        5: g711aNse
+        6: g711uNse
+    - name: rfc2833PT
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.19
+      type: gauge
+      help: 96..127 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.19
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: silenceSuppression
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.20
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.20'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: echoCanceller
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.21
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.21'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: nlpDisable
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.22
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.22'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: comfortNoise
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.23
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.23'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: rtcpTimer
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.24
+      type: gauge
+      help: 5..65535 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.24
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: rtcpControlPeriod
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.25
+      type: gauge
+      help: 2..65535 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.25
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: ciscoNsePT
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.26
+      type: gauge
+      help: 96..127 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.26
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: t38MaxDatagramSize
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.27
+      type: gauge
+      help: 272..512 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.27
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: t38Bitrate
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.28
+      type: gauge
+      help: 9600,14400 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.28
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: modemFaxDelay
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.29
+      type: gauge
+      help: 0..200 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.29
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: voiceMode
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.30
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.30'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: fixed
+        1: adaptive
+    - name: voiceDelayMin
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.31
+      type: gauge
+      help: 0..200 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.31
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: voiceDelayMax
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.32
+      type: gauge
+      help: 2..200 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.32
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: voiceDeletionThreshold
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.33
+      type: gauge
+      help: 200..500 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.33
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+    - name: voiceDeletionMode
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.34
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.34'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        0: hard
+        1: soft
+    - name: profilesCodecsRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.35
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.35'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: rtcpXR
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.36
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.30.7.1.1.36'
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: rfc3264PtCommon
+      oid: 1.3.6.1.4.1.35265.1.9.30.7.1.1.37
+      type: gauge
+      help: Decoding rfc2833 with PT from answer SDP TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.30.7.1.1.37
+      indexes:
+      - labelname: profileNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: tauTrapSink
+      oid: 1.3.6.1.4.1.35265.1.9.31.1
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.1'
+    - name: tauTrapType
+      oid: 1.3.6.1.4.1.35265.1.9.31.2
+      type: gauge
+      help: 1,2 - 1.3.6.1.4.1.35265.1.9.31.2
+      enum_values:
+        1: v1
+        2: v2
+    - name: tauSysName
+      oid: 1.3.6.1.4.1.35265.1.9.31.3
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.3'
+    - name: tauSysContact
+      oid: 1.3.6.1.4.1.35265.1.9.31.4
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.4'
+    - name: tauSysLocation
+      oid: 1.3.6.1.4.1.35265.1.9.31.5
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.5'
+    - name: tauRoCommunity
+      oid: 1.3.6.1.4.1.35265.1.9.31.6
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.6'
+    - name: tauRwCommunity
+      oid: 1.3.6.1.4.1.35265.1.9.31.7
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.7'
+    - name: tauTrapCommunity
+      oid: 1.3.6.1.4.1.35265.1.9.31.8
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.8'
+    - name: tauUserV3Name
+      oid: 1.3.6.1.4.1.35265.1.9.31.9
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.9'
+    - name: tauUserV3Password
+      oid: 1.3.6.1.4.1.35265.1.9.31.10
+      type: OctetString
+      help: ' - 1.3.6.1.4.1.35265.1.9.31.10'
+    - name: tauViewV3Type
+      oid: 1.3.6.1.4.1.35265.1.9.31.11
+      type: gauge
+      help: 1read,2readwrite - 1.3.6.1.4.1.35265.1.9.31.11
+      enum_values:
+        1: readOnly
+        2: readWrite
+    - name: tauRestartSnmp
+      oid: 1.3.6.1.4.1.35265.1.9.31.12
+      type: gauge
+      help: set True to restart snmpd with new snmp-config - 1.3.6.1.4.1.35265.1.9.31.12
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxoSerialGroupsPhone
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.1
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.1'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsEnabled
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.2
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.2'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxoSerialGroupsBusyType
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.3'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        0: clearOnBusy
+        1: waitFirstFree
+    - name: fxoSerialGroupsSipPort
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.4'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsAuthName
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.5
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.5'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsAuthPass
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.6
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.6'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsPorts
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.7
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.7'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsSipProfile
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.8'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+    - name: fxoSerialGroupsTransmitNumber
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.9'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxoSerialGroupsDontTransmitPrefix
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.10'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxoSerialGroupsRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.34.1.1.11'
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: fxoSerialGroupsSend503OnBusy
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.12
+      type: gauge
+      help: Send 503 Service unavailable on busy (SIP) TAU-SIP 2.7 - 1.3.6.1.4.1.35265.1.9.34.1.1.12
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxoSerialGroupsType
+      oid: 1.3.6.1.4.1.35265.1.9.34.1.1.13
+      type: gauge
+      help: group type TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.34.1.1.13
+      indexes:
+      - labelname: fxsDialPlanNumber
+        type: gauge
+      enum_values:
+        3: fxoFirstFree
+        4: fxoAround
+    - name: fxsEnableAutoupdate
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.1
+      type: gauge
+      help: true if autoupdate enabled, false otherwise - 1.3.6.1.4.1.35265.1.9.35.1.1
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fxsSource
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.2
+      type: gauge
+      help: dhcp, dhcpVlan1, dhcpVlan2, dhcpVlan3, noDhcp - 1.3.6.1.4.1.35265.1.9.35.1.2
+      enum_values:
+        0: dhcp
+        1: dhcpVlan1
+        2: dhcpVlan2
+        3: dhcpVlan3
+        4: noDhcp
+    - name: fxsTFTPServer
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.3
+      type: DisplayString
+      help: IP or domain name of tftp server 2.13 - 128 symbols - 1.3.6.1.4.1.35265.1.9.35.1.3
+    - name: fxsConfigurationFile
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.4
+      type: DisplayString
+      help: path to configuration file (tau.dat) - 1.3.6.1.4.1.35265.1.9.35.1.4
+    - name: fxsFirmwareVersion
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.5
+      type: DisplayString
+      help: path to version file (tau.versions) - 1.3.6.1.4.1.35265.1.9.35.1.5
+    - name: fxsConfigurationUpdateInterval
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.6
+      type: gauge
+      help: 'configuration update interval (s): 0 - disabled or 60..65535 - 1.3.6.1.4.1.35265.1.9.35.1.6'
+    - name: fxsFirmwareUpdateInterval
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.7
+      type: gauge
+      help: 'firmware update interval (s): 0 - disabled or 60..65535 - 1.3.6.1.4.1.35265.1.9.35.1.7'
+    - name: autoupdateProtocol
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.8
+      type: gauge
+      help: tftp|ftp|http|https TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.35.1.8
+      enum_values:
+        0: tftp
+        1: ftp
+        2: http
+        3: https
+    - name: autoupdateAuth
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.9
+      type: gauge
+      help: TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.35.1.9
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: autoupdateUser
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.10
+      type: DisplayString
+      help: TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.35.1.10
+    - name: autoupdatePassword
+      oid: 1.3.6.1.4.1.35265.1.9.35.1.11
+      type: DisplayString
+      help: TAU-SIP 2.12 - 1.3.6.1.4.1.35265.1.9.35.1.11
+    - name: fansForceEnable
+      oid: 1.3.6.1.4.1.35265.1.9.37.1
+      type: gauge
+      help: true if fans ON, false otherwise - 1.3.6.1.4.1.35265.1.9.37.1
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: fansThresholdTemperature
+      oid: 1.3.6.1.4.1.35265.1.9.37.2
+      type: gauge
+      help: 'fans_threshold_temperature (C): 35..55 default 55 - 1.3.6.1.4.1.35265.1.9.37.2'
+    - name: deviceName
+      oid: 1.3.6.1.4.1.35265.1.9.37.3
+      type: DisplayString
+      help: Device name TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.37.3
+    - name: startTimer
+      oid: 1.3.6.1.4.1.35265.1.9.37.4
+      type: gauge
+      help: Start timer (sec, from 10 to 300) TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.37.4
+    - name: durationTimer
+      oid: 1.3.6.1.4.1.35265.1.9.37.5
+      type: gauge
+      help: Duration timer (sec, from 10 to 300) TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.37.5
+    - name: waitAnswerTimer
+      oid: 1.3.6.1.4.1.35265.1.9.37.6
+      type: gauge
+      help: Wait answer timer (sec, from 40 to 300) TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.37.6
+    - name: powerMode
+      oid: 1.3.6.1.4.1.35265.1.9.37.7
+      type: gauge
+      help: TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.37.7
+      enum_values:
+        0: normal
+        1: extendedRange
+    - name: siptUsePrefix
+      oid: 1.3.6.1.4.1.35265.1.9.37.8
+      type: gauge
+      help: Use prefix (SIP-T) TAU-SIP 2.10 - 1.3.6.1.4.1.35265.1.9.37.8
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: siptPrefix
+      oid: 1.3.6.1.4.1.35265.1.9.37.9
+      type: DisplayString
+      help: Prefix (SIP-T) TAU-SIP 2.10 - 1.3.6.1.4.1.35265.1.9.37.9
+    - name: runSyslog
+      oid: 1.3.6.1.4.1.35265.1.9.38.1
+      type: gauge
+      help: Run syslog on startup - 1.3.6.1.4.1.35265.1.9.38.1
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: syslogAddr
+      oid: 1.3.6.1.4.1.35265.1.9.38.2
+      type: DisplayString
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.2'
+    - name: syslogPort
+      oid: 1.3.6.1.4.1.35265.1.9.38.3
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.3'
+    - name: appErr
+      oid: 1.3.6.1.4.1.35265.1.9.38.4
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.4'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: appWarn
+      oid: 1.3.6.1.4.1.35265.1.9.38.5
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.5'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: appInfo
+      oid: 1.3.6.1.4.1.35265.1.9.38.6
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.6'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: appDbg
+      oid: 1.3.6.1.4.1.35265.1.9.38.7
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.7'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: sipLevel
+      oid: 1.3.6.1.4.1.35265.1.9.38.8
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.8'
+      enum_values:
+        -1: none
+        0: fatalErrors
+        1: criticalErrors
+        2: nonCriticalErrors
+        3: warnings
+        4: verbose1
+        5: signalProtocol
+        6: verbose2
+        7: mediaProtocol
+        8: verobse3
+        9: everything
+    - name: h323Level
+      oid: 1.3.6.1.4.1.35265.1.9.38.9
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.9'
+      enum_values:
+        0: none
+        1: errors
+        2: warnings
+        3: info
+        4: debugA
+        5: debugB
+        6: debugC
+    - name: vapiEnabled
+      oid: 1.3.6.1.4.1.35265.1.9.38.10
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.10'
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: vapiLibLevel
+      oid: 1.3.6.1.4.1.35265.1.9.38.11
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.11'
+      enum_values:
+        0: none
+        1: api
+        2: apiPacket
+        3: vapiInfo
+        4: vapiGtlInfo
+        5: vapiUt
+        6: allInfo
+    - name: vapiAppLevel
+      oid: 1.3.6.1.4.1.35265.1.9.38.12
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.38.12'
+      enum_values:
+        1: info
+        2: debug
+        3: packet
+        4: warnings
+        5: none
+    - name: appAlarm
+      oid: 1.3.6.1.4.1.35265.1.9.38.13
+      type: gauge
+      help: TAU-SIP 2.9 - 1.3.6.1.4.1.35265.1.9.38.13
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: ruleNumber
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.1
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.44.1.1.1'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: startingSourceIpAddress
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.2
+      type: DisplayString
+      help: Starting source IP address - 1.3.6.1.4.1.35265.1.9.44.1.1.2
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: numberOfSourceIpAddresses
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.3
+      type: gauge
+      help: 'Number of source IP addresses: - 1.3.6.1.4.1.35265.1.9.44.1.1.3'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: allSourceIpAddresses
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.4
+      type: gauge
+      help: All source IP addresses - 1.3.6.1.4.1.35265.1.9.44.1.1.4
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: ruleprotocol
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.5
+      type: gauge
+      help: Protocol - 1.3.6.1.4.1.35265.1.9.44.1.1.5
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        0: any
+        1: udp
+        2: tcp
+        3: icmp
+    - name: typeOfMessageICMP
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.6
+      type: gauge
+      help: 'Type of message (ICMP): for protocol ICMP only - 1.3.6.1.4.1.35265.1.9.44.1.1.6'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        0: any
+        1: echoReply
+        2: destinationUnreachable
+        3: networkUnreachable
+        4: hostUnreachable
+        5: protocolUnreachable
+        6: portUnreachable
+        7: fragmentationNeeded
+        8: sourceRouteFailed
+        9: networkUnknown
+        10: hostUnknown
+        11: networkProhibited
+        12: hostProhibited
+        13: tosNetworkUnreachable
+        14: tosHostUnreachable
+        15: communicationProhibited
+        16: hostPrecedenceViolation
+        17: precedenceCutoff
+        18: sourceQuench
+        19: redirect
+        20: networkRedirect
+        21: hostRedirect
+        22: tosNetworkRedirect
+        23: tosHostRedirect
+        24: echoRequest
+        25: routerAdvertisement
+        26: routerSolicitation
+        27: timeExceeded
+        28: ttlZeroDuringTransit
+        29: ttlZeroDuringReassembly
+        30: parameterProblem
+        31: ipHeaderBad
+        32: requiredOptionMissing
+        33: timestampRequest
+        34: timestampReply
+        35: addressMaskRequest
+        36: addressMaskReply
+    - name: startingSourcePort
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.7
+      type: gauge
+      help: 'Starting source port: from 1 to 65535, for protocols UDP, TCP only -
+        1.3.6.1.4.1.35265.1.9.44.1.1.7'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: numberOfSourcePorts
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.8
+      type: gauge
+      help: 'Number of source ports: starting+number<=65535, for protocols UDP, TCP
+        only - 1.3.6.1.4.1.35265.1.9.44.1.1.8'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: allSourcePorts
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.9
+      type: gauge
+      help: 'All source ports: for protocols UDP, TCP only - 1.3.6.1.4.1.35265.1.9.44.1.1.9'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: startingDestinationPort
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.10
+      type: gauge
+      help: 'Starting destination port: from 1 to 65535, for protocols UDP, TCP only
+        - 1.3.6.1.4.1.35265.1.9.44.1.1.10'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: numberOfDestinationPorts
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.11
+      type: gauge
+      help: 'Number of destination ports: starting+number<=65535, for protocols UDP,
+        TCP only - 1.3.6.1.4.1.35265.1.9.44.1.1.11'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: allDestinationPorts
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.12
+      type: gauge
+      help: 'All destination ports: for protocols UDP, TCP only - 1.3.6.1.4.1.35265.1.9.44.1.1.12'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: ruleTarget
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.13
+      type: gauge
+      help: Target - 1.3.6.1.4.1.35265.1.9.44.1.1.13
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        0: drop
+        1: accept
+        2: reject
+    - name: ruleMoveTo
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.14
+      type: gauge
+      help: set new position of rule (1..30) - 1.3.6.1.4.1.35265.1.9.44.1.1.14
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+    - name: ruleRowStatus
+      oid: 1.3.6.1.4.1.35265.1.9.44.1.1.15
+      type: gauge
+      help: ' - 1.3.6.1.4.1.35265.1.9.44.1.1.15'
+      indexes:
+      - labelname: ruleNumber
+        type: gauge
+      enum_values:
+        1: active
+        2: notInService
+        3: notReady
+        4: createAndGo
+        5: createAndWait
+        6: destroy
+    - name: firewallApply
+      oid: 1.3.6.1.4.1.35265.1.9.44.2
+      type: gauge
+      help: set to apply firewall config it will rollback in ? second without firewallConfirm
+        TAU-SIP 2.7 - 1.3.6.1.4.1.35265.1.9.44.2
+    - name: firewallConfirm
+      oid: 1.3.6.1.4.1.35265.1.9.44.3
+      type: gauge
+      help: set to confirm firewall config firewallCommit kill firewallApply-timer
+        TAU-SIP 2.7 - 1.3.6.1.4.1.35265.1.9.44.3
+    - name: rtpSipMin
+      oid: 1.3.6.1.4.1.35265.1.9.45.1
+      type: gauge
+      help: RTP SIP min - 1.3.6.1.4.1.35265.1.9.45.1
+    - name: rtpSipMax
+      oid: 1.3.6.1.4.1.35265.1.9.45.2
+      type: gauge
+      help: RTP SIP max - 1.3.6.1.4.1.35265.1.9.45.2
+    - name: interceptPortMin
+      oid: 1.3.6.1.4.1.35265.1.9.45.3
+      type: gauge
+      help: Intercept port min - 1.3.6.1.4.1.35265.1.9.45.3
+    - name: interceptPortMax
+      oid: 1.3.6.1.4.1.35265.1.9.45.4
+      type: gauge
+      help: Intercept port max - 1.3.6.1.4.1.35265.1.9.45.4
+    - name: diffservForSip
+      oid: 1.3.6.1.4.1.35265.1.9.45.5
+      type: gauge
+      help: Diffserv for SIP - 1.3.6.1.4.1.35265.1.9.45.5
+    - name: diffservForRtp
+      oid: 1.3.6.1.4.1.35265.1.9.45.6
+      type: gauge
+      help: Diffserv for RTP - 1.3.6.1.4.1.35265.1.9.45.6
+    - name: verifyRemoteMediaAddress
+      oid: 1.3.6.1.4.1.35265.1.9.45.7
+      type: gauge
+      help: Verify remote media address - 1.3.6.1.4.1.35265.1.9.45.7
+      enum_values:
+        1: "true"
+        2: "false"
+    - name: mcTrapExState
+      oid: 1.3.6.1.4.1.35265.3.5.1
+      type: gauge
+      help: state (additional state) - 1.3.6.1.4.1.35265.3.5.1
+    - name: mcTrapLParam1
+      oid: 1.3.6.1.4.1.35265.3.5.2
+      type: gauge
+      help: param-1 (slot or index) - 1.3.6.1.4.1.35265.3.5.2
+    - name: mcTrapLParam2
+      oid: 1.3.6.1.4.1.35265.3.5.3
+      type: gauge
+      help: param-2 (port or index) - 1.3.6.1.4.1.35265.3.5.3
+    - name: mcTrapLParam3
+      oid: 1.3.6.1.4.1.35265.3.5.4
+      type: gauge
+      help: param-3 (other index) - 1.3.6.1.4.1.35265.3.5.4
+    - name: mcTrapID
+      oid: 1.3.6.1.4.1.35265.3.5.5
+      type: gauge
+      help: ID (pbx trap id) - 1.3.6.1.4.1.35265.3.5.5
+    - name: mcTrapDescr
+      oid: 1.3.6.1.4.1.35265.3.5.6
+      type: DisplayString
+      help: Alarm description - 1.3.6.1.4.1.35265.3.5.6
+    - name: mcTrapRestoredAlarmID
+      oid: 1.3.6.1.4.1.35265.3.5.7
+      type: gauge
+      help: If this restore event then here writed Alarm ID - 1.3.6.1.4.1.35265.3.5.7
+    - name: mcTrapSyncType
+      oid: 1.3.6.1.4.1.35265.3.5.8
+      type: gauge
+      help: 'Type of trap: 0 - Normal; 1 - Journal alarms; 2 - Active alarms - 1.3.6.1.4.1.35265.3.5.8'
+    - name: mcReservedFlag
+      oid: 1.3.6.1.4.1.35265.3.5.9
+      type: gauge
+      help: Reserved flag - 1.3.6.1.4.1.35265.3.5.9

@@ -1,5 +1,6 @@
 global:
-  scrape_interval: 10s
+  scrape_interval: 60s
+  scrape_timeout: 60s
 
 scrape_configs:
   - job_name: 'vmagent'
@@ -9,11 +10,12 @@ scrape_configs:
     static_configs:
       - targets: ['victoriametrics:8428']
 #http://localhost:9116/snmp?target=10.171.134.225&auth=public_v2&module=eltex_mib
-  - job_name: 'snmp'
+  - job_name: 'eltex'
     static_configs:
       - targets:
-#        - address_of_device accessed by default snmp port
-        - 0.0.0.0:9999 # SNMP device - port forwarding
+        - 10.171.134.225
+        #        - address_of_device accessed by default snmp port
+        #        - 0.0.0.0:9999 # SNMP device - port forwarding
     metrics_path: /snmp
     params:
       auth: [public_v2]
@@ -24,9 +26,9 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 127.0.0.1:9116  # The SNMP exporter's real hostname:port.
+        replacement: snmp_exporter:9116  # The SNMP exporter's real hostname:port.
 
   # Global exporter-level metrics
   - job_name: 'snmp_exporter'
     static_configs:
-      - targets: ['localhost:9116']
+      - targets: ['snmp_exporter:9116']

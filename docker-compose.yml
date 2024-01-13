@@ -8,7 +8,7 @@ services:
       - 8429:8429
     volumes:
       - ./vmagentdata:/vmagentdata
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
     command:
       - "--promscrape.config=/etc/prometheus/prometheus.yml"
       - "--remoteWrite.url=http://victoriametrics:8428/api/v1/write"
@@ -34,7 +34,7 @@ services:
     ports:
       - 9116:9116
     volumes:
-      - ./snmp_exporter/snmp_test.yml:/etc/snmp_exporter/snmp.yml
+      - ./snmp.yml:/etc/snmp_exporter/snmp.yml:ro
     command:
       - "--config.file=/etc/snmp_exporter/snmp.yml"
     networks:
